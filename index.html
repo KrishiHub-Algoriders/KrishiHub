@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KrishiHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ---------------- Login Page ---------------- -->
+<div id="loginPage" class="page active">
+  <div class="card-form">
+    <img src="https://img.icons8.com/color/96/tractor.png" class="form-logo">
+    <h2 id="loginTitle">Login</h2>
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button id="loginBtn" onclick="login()">Login</button>
+    <p id="regLink" onclick="showRegister()" style="cursor:pointer;color:#00796b;">New user? Register</p>
+  </div>
+</div>
+
+<!-- ---------------- Register Page ---------------- -->
+<div id="registerPage" class="page">
+  <div class="card-form">
+    <img src="https://img.icons8.com/color/96/plant-under-sun.png" class="form-logo">
+    <h2 id="registerTitle">Register</h2>
+    <input type="text" id="regUser" placeholder="Username">
+    <input type="password" id="regPass" placeholder="Password">
+    <input type="text" id="regMobile" placeholder="Mobile Number">
+    <input type="email" id="regEmail" placeholder="Email">
+    <button id="registerBtn" onclick="register()">Register</button>
+  </div>
+</div>
+
+<!-- ---------------- Dashboard ---------------- -->
+<div id="dashboard" class="page">
+  <div class="header">
+    <div class="logo-container">
+      <img src="https://img.icons8.com/color/96/tractor.png" class="logo">
+      <h1 id="title">KrishiHub</h1>
+    </div>
+    <div class="header-buttons">
+      <button id="logoutBtn" onclick="logout()">Logout</button>
+      <button class="lang-switch" onclick="toggleLang()">हिंदी</button>
+    </div>
+  </div>
+
+  <div id="featureGrid" class="grid"></div>
+  <div id="featureContent"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
