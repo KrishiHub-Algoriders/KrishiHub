@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    buildDashboard();
+});
+
 // ---------------- Language & Translations ----------------
 let lang = "en";
 const translations = {
@@ -359,3 +363,4 @@ function displaySMSReminders(){
 
 // ---------------- Init ----------------
 document.addEventListener("DOMContentLoaded",()=>{ buildDashboard(); });
+
